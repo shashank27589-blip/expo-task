@@ -1,0 +1,21 @@
+{
+  "name": "project-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/mobile"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "dev:mobile": "npm run start -w apps/mobile",
+    "dev:mobile:local": "npm run start:local -w apps/mobile",
+    "dev:web:local": "npm run web:local -w apps/mobile",
+    "build:api": "npm run build -w apps/api",
+    "typecheck": "npm run typecheck -w apps/api && npm run typecheck -w apps/mobile",
+    "test:api": "npm run test -w apps/api",
+    "prisma:generate": "npm run prisma:generate -w apps/api",
+    "prisma:migrate": "npm run prisma:migrate -w apps/api",
+    "prisma:push": "npm run prisma:push -w apps/api"
+  }
+}
