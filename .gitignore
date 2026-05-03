@@ -9,3 +9,4 @@ build/
 coverage/
 *.log
 apps/api/prisma/dev.db
+apps/mobile/web-build/

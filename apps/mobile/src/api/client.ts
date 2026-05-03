@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const baseURL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:4000";
+const baseURL =
+  process.env.EXPO_PUBLIC_API_URL ||
+  (process.env.NODE_ENV === "production"
+    ? "https://expo-task.onrender.com"
+    : "http://localhost:4000");
 let getAccessToken: () => string | null = () => null;
 
 export const api = axios.create({

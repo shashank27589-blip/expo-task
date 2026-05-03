@@ -10,6 +10,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "web:local": "set BROWSER=none&& expo start --web --offline --port 8084 --max-workers 1",
+    "build": "expo build:web",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
