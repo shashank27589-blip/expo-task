@@ -12,6 +12,7 @@
     "dev:mobile:local": "npm run start:local -w apps/mobile",
     "dev:web:local": "npm run web:local -w apps/mobile",
     "build:api": "npm run build -w apps/api",
+    "start": "npm start -w apps/api",
     "typecheck": "npm run typecheck -w apps/api && npm run typecheck -w apps/mobile",
     "test:api": "npm run test -w apps/api",
     "prisma:generate": "npm run prisma:generate -w apps/api",
